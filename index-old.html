@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Martin – Full-Stack Developer · CV" />
+  <title>Alex Martin – CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── SVG Icon Sprite ─────────────────────────────── -->
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="display:none">
+    <symbol id="icon-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect width="4" height="12" x="2" y="9"/>
+      <circle cx="4" cy="4" r="2"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+      <path d="M9 18c-4.51 2-5-2-7-2"/>
+    </symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" x2="12" y1="15" y2="3"/>
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+      <path d="M2 12h20"/>
+    </symbol>
+  </svg>
+
+  <!-- ── Toolbar ──────────────────────────────────────── -->
+  <nav class="toolbar no-print" aria-label="CV controls">
+    <button id="lang-toggle" class="btn btn-outline" aria-label="Switch to French">
+      <svg class="icon" aria-hidden="true"><use href="#icon-globe"/></svg>
+      <span id="lang-label">FR</span>
+    </button>
+    <a id="pdf-link"
+       href="assets/cv-alex-martin.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary">
+      <svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>
+      <span data-i18n="download_pdf">Download PDF</span>
+    </a>
+  </nav>
+
+  <!-- ── CV ───────────────────────────────────────────── -->
+  <main class="cv-container" id="cv">
+
+    <!-- Header / Profile -->
+    <header class="cv-header">
+      <div class="avatar" role="img" aria-label="Profile initials: AM">AM</div>
+      <div class="cv-header__info">
+        <h1 class="cv-name">Alex Martin</h1>
+        <p class="cv-title" data-i18n="job_title">Full-Stack Developer</p>
+        <ul class="cv-contacts" aria-label="Contact information">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-email"/></svg>
+            <a href="mailto:alex.martin@example.com">alex.martin@example.com</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+            <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-location"/></svg>
+            <span data-i18n="location">Paris, France</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+            <a href="https://linkedin.com/in/alexmartin" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexmartin</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+            <a href="https://github.com/alexmartin" target="_blank" rel="noopener noreferrer">github.com/alexmartin</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section class="cv-section cv-section--summary">
+      <h2 class="section-title" data-i18n="section_summary">Summary</h2>
+      <p data-i18n="summary_text">
+        Passionate full-stack developer with 7+ years of experience building scalable web
+        applications. Proven track record of delivering high-quality software solutions across
+        fintech, e-commerce, and SaaS. Strong advocate for clean code, agile methodologies,
+        and continuous learning.
+      </p>
+    </section>
+
+    <!-- Two-column grid -->
+    <div class="cv-grid">
+
+      <!-- ── Main column: Experience ── -->
+      <div class="cv-col--main">
+        <section class="cv-section">
+          <h2 class="section-title" data-i18n="section_experience">Experience</h2>
+          <div class="timeline">
+
+            <!-- Job 1 -->
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3 class="timeline-title" data-i18n="exp1_title">Senior Full-Stack Developer</h3>
+                <div class="timeline-meta">
+                  <span class="timeline-org" data-i18n="exp1_company">TechCorp Solutions</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp1_period">Jan 2022 – Present</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp1_location">Paris, France</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li data-i18n="exp1_bullet1">Led the migration to a microservices architecture handling 500 000 daily active users</li>
+                  <li data-i18n="exp1_bullet2">Redesigned the React/TypeScript front end, reducing average page load time by 40 %</li>
+                  <li data-i18n="exp1_bullet3">Established code review guidelines and mentored 3 junior developers</li>
+                  <li data-i18n="exp1_bullet4">Collaborated with product and design teams using agile/Scrum methods</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Job 2 -->
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3 class="timeline-title" data-i18n="exp2_title">Full-Stack Developer</h3>
+                <div class="timeline-meta">
+                  <span class="timeline-org" data-i18n="exp2_company">Startup Hub</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp2_period">Mar 2019 – Dec 2021</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp2_location">Lyon, France</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li data-i18n="exp2_bullet1">Built an e-commerce platform from scratch, generating €2 M in annual revenue within the first year</li>
+                  <li data-i18n="exp2_bullet2">Implemented CI/CD pipelines (GitHub Actions, Docker) cutting deployment time by 60 %</li>
+                  <li data-i18n="exp2_bullet3">Integrated Stripe and PayPal payment gateways for a seamless checkout experience</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Job 3 -->
+            <article class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3 class="timeline-title" data-i18n="exp3_title">Junior Developer</h3>
+                <div class="timeline-meta">
+                  <span class="timeline-org" data-i18n="exp3_company">WebAgency</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp3_period">Sep 2017 – Feb 2019</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span data-i18n="exp3_location">Bordeaux, France</span>
+                </div>
+                <ul class="timeline-bullets">
+                  <li data-i18n="exp3_bullet1">Delivered 20+ responsive client websites on time and within budget</li>
+                  <li data-i18n="exp3_bullet2">Developed RESTful APIs using Node.js and Express</li>
+                  <li data-i18n="exp3_bullet3">Maintained and optimised legacy WordPress sites</li>
+                </ul>
+              </div>
+            </article>
+
+          </div><!-- /.timeline -->
+        </section>
+      </div><!-- /.cv-col--main -->
+
+      <!-- ── Side column: Education · Skills · Languages ── -->
+      <aside class="cv-col--side">
+
+        <!-- Education -->
+        <section class="cv-section">
+          <h2 class="section-title" data-i18n="section_education">Education</h2>
+
+          <div class="edu-item">
+            <h3 data-i18n="edu1_degree">MSc Computer Science</h3>
+            <p class="edu-school" data-i18n="edu1_school">École Polytechnique</p>
+            <p class="edu-meta">
+              <span data-i18n="edu1_period">2015 – 2017</span>
+              <span aria-hidden="true"> · </span>
+              <span data-i18n="edu1_location">Palaiseau, France</span>
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <h3 data-i18n="edu2_degree">BSc Computer Science</h3>
+            <p class="edu-school" data-i18n="edu2_school">Université de Bordeaux</p>
+            <p class="edu-meta">
+              <span data-i18n="edu2_period">2012 – 2015</span>
+              <span aria-hidden="true"> · </span>
+              <span data-i18n="edu2_location">Bordeaux, France</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="cv-section">
+          <h2 class="section-title" data-i18n="section_skills">Skills</h2>
+
+          <div class="skills-group">
+            <h4 class="skills-category" data-i18n="skills_frontend">Frontend</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4 class="skills-category" data-i18n="skills_backend">Backend</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">GraphQL</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4 class="skills-category" data-i18n="skills_devops">DevOps &amp; Tools</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="cv-section">
+          <h2 class="section-title" data-i18n="section_languages">Languages</h2>
+          <ul class="lang-list">
+            <li class="lang-item">
+              <span class="lang-name" data-i18n="lang_french">French</span>
+              <span class="lang-level" data-i18n="lang_native">Native</span>
+            </li>
+            <li class="lang-item">
+              <span class="lang-name" data-i18n="lang_english">English</span>
+              <span class="lang-level" data-i18n="lang_professional">Professional · C1</span>
+            </li>
+            <li class="lang-item">
+              <span class="lang-name" data-i18n="lang_spanish">Spanish</span>
+              <span class="lang-level" data-i18n="lang_conversational">Conversational · B1</span>
+            </li>
+          </ul>
+        </section>
+
+      </aside><!-- /.cv-col--side -->
+    </div><!-- /.cv-grid -->
+
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

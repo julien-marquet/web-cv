@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex Martin – Full-Stack Developer · CV" />
+    <title>Alex Martin – CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main class="page-shell">
+      <aside class="sidebar">
+        <div class="identity">
+          <div class="avatar" aria-hidden="true">JM</div>
+          <div>
+            <h1 data-i18n="profile.name">Julien Marquet</h1>
+            <p data-i18n="profile.tagline">
+              Développeur fullstack TypeScript avec une appétence particulière pour le backend, l’architecture et les systèmes.
+            </p>
+          </div>
+        </div>
+
+        <div class="sidebar-grid">
+          <section class="sidebar-section">
+            <h2 data-i18n="sections.contact">Contact</h2>
+            <p data-i18n="profile.location">Lyon, France</p>
+            <a href="mailto:julienmarquet9@gmail.com">julienmarquet9@gmail.com</a>
+          </section>
+
+          <section class="sidebar-section">
+            <h2 data-i18n="sections.focus">Focus</h2>
+            <p data-i18n="profile.focus">Backend · Architecture · Cloud</p>
+          </section>
+        </div>
+
+        <section class="sidebar-section">
+          <h2 data-i18n="sections.coreStack">Core Stack</h2>
+          <div class="chips" id="skills-list"></div>
+        </section>
+
+        <section class="sidebar-section print-hidden">
+          <h2 data-i18n="sections.language">Langue</h2>
+          <div class="language-switcher" aria-label="Language switcher">
+            <button type="button" data-lang-button="fr" aria-pressed="true">FR</button>
+            <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="content">
+        <header class="hero">
+          <p class="eyebrow" data-i18n="hero.role">Développeur Fullstack / Backend TypeScript</p>
+          <h2 data-i18n="hero.title">Construire des applications web robustes, lisibles et maintenables.</h2>
+          <p data-i18n="hero.description">
+            Profil orienté backend et conception logicielle, avec une expérience fullstack TypeScript, des sujets cloud/devops et une sensibilité architecture.
+          </p>
+        </header>
+
+        <section class="metric-grid" aria-label="Highlights">
+          <article class="metric-card">
+            <h3 data-i18n="highlights.typescript.title">TypeScript</h3>
+            <p data-i18n="highlights.typescript.text">Stack principale web & backend.</p>
+          </article>
+          <article class="metric-card">
+            <h3 data-i18n="highlights.backend.title">Backend</h3>
+            <p data-i18n="highlights.backend.text">API, données, architecture.</p>
+          </article>
+          <article class="metric-card">
+            <h3 data-i18n="highlights.infra.title">Infra</h3>
+            <p data-i18n="highlights.infra.text">Cloud, CI/CD, observabilité.</p>
+          </article>
+        </section>
+
+        <section class="panel avoid-break">
+          <h3 data-i18n="sections.selectedProject">Projet sélectionné</h3>
+          <article class="project-card">
+            <h4 data-i18n="project.name">Pulse Analytics</h4>
+            <p data-i18n="project.description">
+              Plateforme d'analytics événementielle : ingestion d’événements, traitement asynchrone, agrégations, dashboard et observabilité.
+            </p>
+            <p class="stack-line" data-i18n="project.stack">TypeScript · NestJS · PostgreSQL · BullMQ · React</p>
+          </article>
+        </section>
+
+        <section class="panel">
+          <h3 data-i18n="sections.experience">Expérience</h3>
+          <div class="timeline" id="experience-list"></div>
+        </section>
+      </section>
+    </main>
+
+      <script src="js/i18n.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
