@@ -15,6 +15,12 @@
 
 <body>
   <nav class="lang-bar print-hidden" aria-label="Language switcher">
+    <a class="pdf-btn" href="cv-fr.pdf" target="_blank" rel="noopener" aria-label="Download PDF" data-pdf-link>
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-7 4v-2h14v2H5z"/>
+      </svg>
+      PDF
+    </a>
     <button class="lang-switch" type="button" role="switch" aria-checked="false" aria-label="Switch language"
       data-lang-switch>
       <span class="lang-switch-thumb"></span>
@@ -31,12 +37,6 @@
         <div class="identity-text">
           <div class="identity-name-row">
             <h1>Julien Marquet</h1>
-            <button class="lang-switch lang-switch-mobile print-hidden" type="button" role="switch" aria-checked="false"
-              aria-label="Switch language" data-lang-switch-mobile>
-              <span class="lang-switch-thumb"></span>
-              <span>FR</span>
-              <span>EN</span>
-            </button>
           </div>
           <p data-i18n="tagline">
             Développeur Fullstack TypeScript à dominante Backend

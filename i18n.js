@@ -8,5 +8,8 @@ function applyTranslation(lang) {
   document.querySelectorAll('[data-lang-switch], [data-lang-switch-mobile]').forEach(btn => {
     btn.setAttribute('aria-checked', isEn ? 'true' : 'false');
   });
+  document.querySelectorAll('[data-pdf-link]').forEach(a => {
+    a.href = `cv-${lang}.pdf`;
+  });
   localStorage.setItem('lang', lang);
 }
