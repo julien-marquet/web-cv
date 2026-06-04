@@ -112,6 +112,15 @@ h1 {
   text-justify: distribute;
 }
 
+.identity-years {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+  text-align: left;
+}
+
 .sidebar-grid {
   display: grid;
   gap: 0.5rem;
@@ -605,16 +614,7 @@ h1 {
     margin-bottom: 2mm;
     font-size: 8pt;
     color: #334155;
-    padding-left: 3mm;
     position: relative;
-  }
-
-  .cv-sidebar li::before {
-    content: "·";
-    position: absolute;
-    left: 0;
-    color: #84cc16;
-    font-weight: 700;
   }
 
   /* Content */
@@ -624,8 +624,6 @@ h1 {
 
   .cv-header {
     margin-bottom: 7mm;
-    padding-bottom: 5mm;
-    /* border-bottom: 0.3mm solid #e2e8f0; */
   }
 
   .cv-header h1 {
@@ -637,12 +635,26 @@ h1 {
     line-height: 1.1;
   }
 
-  .cv-header > p {
+  .cv-header .cv-tagline {
     margin: 1.5mm 0 0;
-    font-size: 9pt;
+    font-size: 10.5pt;
     font-weight: 600;
     color: #65a30d;
     letter-spacing: 0.01em;
+  }
+
+  .cv-years {
+    margin: 1mm 0 0;
+    font-size: 7.5pt;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  .cv-profile {
+    margin: 3.5mm 0 0;
+    font-size: 8pt;
+    color: #475569;
+    line-height: 1.55;
   }
 
   .cv-section {
