@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/puppeteer/puppeteer:latest
-      options: --user root --cap-add=SYS_ADMIN
+      options: --user root
     steps:
       - uses: actions/checkout@v4
 

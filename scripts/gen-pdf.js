@@ -6,7 +6,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const src = resolve(__dirname, '../index.html')
 const out = resolve(__dirname, '../cv.pdf')
 
-const browser = await puppeteer.launch()
+const browser = await puppeteer.launch({
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+})
 const page = await browser.newPage()
 
 await page.goto(`file://${src}`, { waitUntil: 'networkidle0' })
