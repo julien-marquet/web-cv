@@ -257,6 +257,10 @@ h1 {
   transition: transform 0.2s ease;
 }
 
+.preload .lang-switch-thumb {
+  transition: none;
+}
+
 .lang-switch[aria-checked="true"] .lang-switch-thumb {
   transform: translateX(100%);
 }

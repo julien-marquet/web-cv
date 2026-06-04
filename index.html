@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.style.visibility = 'hidden'</script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
               <span>EN</span>
             </button>
           </div>
-          <p>
+          <p data-i18n="tagline">
             Développeur Fullstack TypeScript à dominante Backend
           </p>
         </div>
@@ -83,12 +84,12 @@
           </p>
         </section>
         <section class="sidebar-section">
-          <h2>Ce qui m'intéresse</h2>
+          <h2 data-i18n="interests.title">Ce qui m'intéresse</h2>
           <ul>
             <li>Backend</li>
             <li>Fullstack</li>
-            <li>Architecture logicielle</li>
-            <li>Produit</li>
+            <li data-i18n="interests.softwareArchitecture">Architecture logicielle</li>
+            <li data-i18n="interests.product">Produit</li>
           </ul>
         </section>
         <section class="sidebar-section core-stack-section">
@@ -111,9 +112,9 @@
 
     <section class="content">
       <header class="hero">
-        <p class="eyebrow">Fullstack · Produit</p>
-        <h2>Du produit à l'infrastructure</h2>
-        <p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Fullstack · Produit</p>
+        <h2 data-i18n="hero.title">Du produit à l'infrastructure</h2>
+        <p data-i18n="hero.description">
           J'interviens sur l'ensemble de la chaîne de développement, du frontend à l'infrastructure, avec une expertise
           particulière en développement backend, architecture logicielle et conception de systèmes.
         </p>
@@ -122,28 +123,28 @@
       <section class="metric-grid" aria-label="Highlights">
         <article class="metric-card">
           <h3>Fullstack</h3>
-          <p>Développement frontend et backend en TypeScript</p>
+          <p data-i18n="metrics.fullstack">Développement frontend et backend en TypeScript</p>
         </article>
         <article class="metric-card">
           <h3>Architecture</h3>
-          <p>Conception de systèmes robustes et maintenables</p>
+          <p data-i18n="metrics.architecture">Conception de systèmes robustes et maintenables</p>
         </article>
         <article class="metric-card">
-          <h3>Plateforme</h3>
-          <p>Cloud, CI/CD, observabilité et sécurité</p>
+          <h3 data-i18n="metrics.platform.label">Plateforme</h3>
+          <p data-i18n="metrics.platform">Cloud, CI/CD, observabilité et sécurité</p>
         </article>
       </section>
 
       <section class="panel">
-        <h3>Expérience</h3>
+        <h3 data-i18n="sections.experience">Expérience</h3>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>Architecte technique</h4>
-              <span class="period">janv. 2023 — oct. 2024</span>
+              <h4 data-i18n="exp.lya2.title">Architecte technique</h4>
+              <span class="period" data-i18n="exp.lya2.period">janv. 2023 — oct. 2024</span>
             </div>
             <p class="company">Lya Protect</p>
-            <p class="description">
+            <p class="description" data-i18n="exp.lya2.description">
               Architecture applicative et développement fullstack sur le projet Endya,
               une plateforme de contrôle de conformité pour les courtiers en assurance.
               Conception de services backend avec NestJS, développement React, intégration AWS,
@@ -162,11 +163,11 @@
 
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>Développeur fullstack</h4>
-              <span class="period">juin 2019 — janv. 2023</span>
+              <h4 data-i18n="exp.lya1.title">Développeur fullstack</h4>
+              <span class="period" data-i18n="exp.lya1.period">juin 2019 — janv. 2023</span>
             </div>
             <p class="company">Lya Protect</p>
-            <p class="description">
+            <p class="description" data-i18n="exp.lya1.description">
               Développement et évolution de plateformes SaaS et CRM dans le secteur de l'assurance :
               applications React, services backend, CI/CD, tests, composants réutilisables et amélioration
               de l'architecture applicative.
@@ -182,11 +183,11 @@
 
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>Développeur web</h4>
-              <span class="period">sept. 2016 — août 2017</span>
+              <h4 data-i18n="exp.actitouch.title">Développeur web</h4>
+              <span class="period" data-i18n="exp.actitouch.period">sept. 2016 — août 2017</span>
             </div>
             <p class="company">Actitouch</p>
-            <p class="description">
+            <p class="description" data-i18n="exp.actitouch.description">
               Développement frontend et backend sur une plateforme e-commerce dédiée aux professionnels
               de la restauration, avec AngularJS, Node.js, PHP et Prestashop.
             </p>
@@ -200,15 +201,15 @@
         </div>
       </section>
       <section class="panel">
-        <h3>Projet sélectionné</h3>
+        <h3 data-i18n="sections.selectedProject">Projet sélectionné</h3>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-header">
               <h4>Pulse Analytics</h4>
-              <span class="period">2026 — Aujourd'hui</span>
+              <span class="period" data-i18n="project.pulse.period">2026 — Aujourd'hui</span>
             </div>
-            <p class="company">Projet personnel</p>
-            <p class="description">
+            <p class="company" data-i18n="project.pulse.company">Projet personnel</p>
+            <p class="description" data-i18n="project.pulse.description">
               Plateforme d'analytics événementielle permettant de collecter, traiter et agréger
               des événements applicatifs. Projet développé pour explorer des problématiques
               de conception backend, de traitement asynchrone et d'architecture logicielle.
@@ -223,46 +224,46 @@
             </div>
             <a href="https://github.com/julien-marquet/pulse-analytics" target="_blank" rel="noopener noreferrer" class="repo-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94.58.1.79-.25.79-.56v-2c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
-              Voir sur GitHub
+              <span data-i18n="project.pulse.githubLink">Voir sur GitHub</span>
             </a>
           </article>
         </div>
       </section>
 
       <section class="panel">
-        <h3>Formation</h3>
+        <h3 data-i18n="sections.education">Formation</h3>
 
         <div class="timeline">
 
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>Formation d'Architecte Technique du Numérique</h4>
+              <h4 data-i18n="edu.42.title">Formation d'Architecte Technique du Numérique</h4>
               <span class="period">2017 — 2019</span>
             </div>
             <p class="company">42 Lyon Auvergne-Rhône-Alpes</p>
-            <p class="description">
+            <p class="description" data-i18n="edu.42.description">
               Formation orientée développement logiciel, architecture, algorithmique et projets collaboratifs.
             </p>
           </article>
 
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>Bachelor CSIA</h4>
+              <h4 data-i18n="edu.campus.title">Bachelor CSIA</h4>
               <span class="period">2016 — 2017</span>
             </div>
             <p class="company">Campus Sciences-U Lyon</p>
-            <p class="description">
+            <p class="description" data-i18n="edu.campus.description">
               Développement logiciel, systèmes d'information et gestion de projets.
             </p>
           </article>
 
           <article class="timeline-item">
             <div class="timeline-header">
-              <h4>BTS SIO — option SLAM</h4>
+              <h4 data-i18n="edu.bts.title">BTS SIO — option SLAM</h4>
               <span class="period">2014 — 2016</span>
             </div>
             <p class="company">ICOGES</p>
-            <p class="description">
+            <p class="description" data-i18n="edu.bts.description">
               Développement d'applications, bases de données et conception de services web.
             </p>
           </article>
@@ -272,6 +273,7 @@
     </section>
   </main>
 
+  <script src="js/translations.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
