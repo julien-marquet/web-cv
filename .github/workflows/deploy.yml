@@ -34,7 +34,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
-          path: cv.pdf
+          path: |
+            cv-fr.pdf
+            cv-en.pdf
 
   deploy:
     needs: generate-pdf
@@ -48,6 +50,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: cv-pdf
+          path: .
 
       - uses: actions/configure-pages@v5
 
