@@ -15,23 +15,46 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/puppeteer/puppeteer:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        working-directory: scripts
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+        run: npm install
+
+      - name: Generate PDF
+        working-directory: scripts
+        run: node gen-pdf.js
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: cv.pdf
+
   deploy:
+    needs: generate-pdf
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - uses: actions/download-artifact@v4
+        with:
+          name: cv-pdf
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

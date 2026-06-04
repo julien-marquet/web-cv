@@ -1,0 +1,17 @@
+{
+  "name": "generate-pdf-script",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node gen-pdf.js"
+  },
+  "dependencies": {
+    "puppeteer": "^25.1.0"
+  },
+  "description": "",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
