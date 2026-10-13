@@ -54,7 +54,7 @@ const TRANSLATIONS = {
     'exp.yearsExperience': '6 years of experience',
     'profile.summary': 'Full-stack TypeScript developer with a strong focus on backend, software architecture, and cloud systems. Experienced in building SaaS applications, business platforms, and AWS-based infrastructure.',
     'common.fullstack': 'Full-stack',
-    'interests.title': 'Expertise',
+    'interests.title': 'Areas of interest',
     'interests.softwareArchitecture': 'Software architecture',
     'interests.product': 'Product',
     'interests.cloudInfrastructure': 'Cloud & Infrastructure',
