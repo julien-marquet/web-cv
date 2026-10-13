@@ -40,7 +40,7 @@
             <h1>Julien Marquet</h1>
           </div>
           <p data-i18n="tagline">
-            Développeur Fullstack TypeScript à dominante Backend
+            Ingénieur Backend · TypeScript, Node.js, AWS
           </p>
           <p class="identity-years" data-i18n="exp.yearsExperience">6 ans d'expérience</p>
         </div>
@@ -89,10 +89,10 @@
           <h2 data-i18n="interests.title">Ce qui m'intéresse</h2>
           <ul>
             <li>Backend</li>
-            <li data-i18n="common.fullstack">Fullstack</li>
+            <li data-i18n="interests.cloudInfrastructure">Cloud &amp; Infrastructure</li>
             <li data-i18n="interests.softwareArchitecture">Architecture logicielle</li>
-            <li data-i18n="interests.product">Produit</li>
-            <li data-i18n="interests.cloudInfrastructure">Cloud &amp; Infrastructure</li>            
+            <li data-i18n="interests.developerExperience">Expérience développeur</li>
+            <li data-i18n="interests.cicdTooling">CI/CD &amp; outillage</li>
           </ul>
         </section>
         <section class="sidebar-section core-stack-section">
@@ -100,14 +100,14 @@
           <div class="chips">
             <span class="chip">TypeScript</span>
             <span class="chip">Node.js</span>
-            <span class="chip">React</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Terraform</span>
+            <span class="chip">Docker</span>
             <span class="chip">NestJS</span>
             <span class="chip">Fastify</span>
             <span class="chip">PostgreSQL</span>
-            <span class="chip">AWS</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Terraform</span>
             <span class="chip">Redis</span>
+            <span class="chip">React</span>
           </div>
       </div>
       </section>
@@ -115,8 +115,8 @@
 
     <section class="content">
       <header class="hero">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Fullstack · Produit</p>
-        <h2 data-i18n="hero.title">Du produit à l'infrastructure</h2>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Backend · Plateforme</p>
+        <h2 data-i18n="hero.title">Du code à l'infrastructure</h2>
         <p data-i18n="hero.description">
           J'interviens sur l'ensemble de la chaîne de développement, du frontend à l'infrastructure, avec une expertise
           particulière en développement backend, architecture logicielle et conception de systèmes.
@@ -125,16 +125,16 @@
 
       <section class="metric-grid" aria-label="Highlights">
         <article class="metric-card">
-          <h3 data-i18n="common.fullstack">Fullstack</h3>
-          <p data-i18n="metrics.fullstack">Développement frontend et backend en TypeScript</p>
+          <h3 data-i18n="metrics.platform.label">Plateforme</h3>
+          <p data-i18n="metrics.platform">Cloud, CI/CD, observabilité et sécurité</p>
         </article>
         <article class="metric-card">
           <h3>Architecture</h3>
           <p data-i18n="metrics.architecture">Conception de systèmes robustes et maintenables</p>
         </article>
         <article class="metric-card">
-          <h3 data-i18n="metrics.platform.label">Plateforme</h3>
-          <p data-i18n="metrics.platform">Cloud, CI/CD, observabilité et sécurité</p>
+          <h3 data-i18n="common.fullstack">Fullstack</h3>
+          <p data-i18n="metrics.fullstack">Développement frontend et backend en TypeScript</p>
         </article>
       </section>
 
@@ -149,13 +149,20 @@
             <p class="company">Once For All</p>
             <p class="description" data-i18n="exp.ofa.description">
               Refactorisation de deux plateformes serverless, un bus d'événements et une API de données
-              d'entreprises, chez un éditeur de SaaS de conformité pour le secteur du BTP. Mutualisation
-              du code commun et réduction de la complexité, pour plus de fiabilité et de maintenabilité.
+              d'entreprises, chez un éditeur de SaaS de conformité pour le secteur du BTP, avec
+              mutualisation du code commun et réduction de la complexité. Création d'outils en ligne de
+              commande pour les développeurs, dont un pour rejouer un événement à partir de son
+              identifiant de corrélation (debug et support) et un autre qui produit, à partir des logs
+              CloudWatch, un rapport sur les dérives des contrats d'API des fournisseurs.
             </p>
             <div class="tag-list">
               <span class="tag">Node.js</span>
               <span class="tag">TypeScript</span>
               <span class="tag">AWS</span>
+              <span class="tag">Lambda</span>
+              <span class="tag">EventBridge</span>
+              <span class="tag">Step Functions</span>
+              <span class="tag">DynamoDB</span>
             </div>
           </article>
 
@@ -166,19 +173,25 @@
             </div>
             <p class="company">Lya Protect</p>
             <p class="description" data-i18n="exp.lya2.description">
-              Architecture applicative et développement fullstack sur le projet Endya,
-              une plateforme de contrôle de conformité pour les courtiers en assurance.
-              Conception de services backend avec NestJS, développement React, intégration AWS,
-              mise en cache Redis et infrastructure Terraform. Contribution également aux sujets
-              d'observabilité, de sécurité applicative et d'optimisation des coûts AWS.
+              Architecture et développement fullstack (NestJS, React, Redis) d'Endya, une plateforme de
+              contrôle de conformité pour les courtiers en assurance. Migration de la plateforme de
+              Kubernetes vers AWS avec Terraform, avec à la clé une forte réduction des coûts et
+              l'automatisation complète des déploiements. Réalisation de POC, documentation systématique
+              des résultats et présentation aux autres équipes ; accompagnement des équipes dans
+              l'adoption de nouveaux standards, notamment via une série d'ateliers sur les tests.
+              Contribution à l'observabilité et à la sécurité applicative.
             </p>
             <div class="tag-list">
-              <span class="tag">React</span>
-              <span class="tag">NestJS</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Redis</span>
               <span class="tag">AWS</span>
               <span class="tag">Terraform</span>
+              <span class="tag">ECS</span>
+              <span class="tag">CloudFront</span>
+              <span class="tag">Cognito</span>
+              <span class="tag">CloudWatch</span>
+              <span class="tag">NestJS</span>
+              <span class="tag">React</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Redis</span>
             </div>
           </article>
 
@@ -189,9 +202,10 @@
             </div>
             <p class="company">Lya Protect</p>
             <p class="description" data-i18n="exp.lya1.description">
-              Développement et évolution de plateformes SaaS et CRM dans le secteur de l'assurance :
-              applications React, services backend, CI/CD, tests, composants réutilisables et amélioration
-              de l'architecture applicative.
+              Développement et évolution de plateformes SaaS et CRM dans le secteur de l'assurance, avec
+              React et Fastify. Mise en place des pipelines CI/CD et création de bibliothèques partagées
+              utilisées par les autres développeurs. Tests, composants réutilisables et amélioration
+              continue de l'architecture applicative.
             </p>
             <div class="tag-list">
               <span class="tag">React</span>
@@ -330,13 +344,25 @@
         </section>
 
         <section>
+          <h2 data-i18n="sidebar.languages">Langues</h2>
+          <div class="cv-info-block">
+            <strong data-i18n="lang.french">Français</strong>
+            <span data-i18n="lang.frenchLevel">Langue maternelle</span>
+          </div>
+          <div class="cv-info-block">
+            <strong data-i18n="lang.english">Anglais</strong>
+            <span data-i18n="lang.englishLevel">Professionnel</span>
+          </div>
+        </section>
+
+        <section>
           <h2 data-i18n="expertises.title">Expertises</h2>
           <ul>
             <li>Backend</li>
-            <li data-i18n="common.fullstack">Fullstack</li>
-            <li data-i18n="expertises.softwareArchitecture">Architecture logicielle</li>
             <li data-i18n="expertises.cloudInfrastructure">Cloud &amp; Infrastructure</li>
+            <li data-i18n="expertises.softwareArchitecture">Architecture logicielle</li>
             <li data-i18n="expertises.distributedSystems">Systèmes distribués</li>
+            <li data-i18n="common.fullstack">Fullstack</li>
           </ul>
         </section>
 
@@ -345,14 +371,14 @@
           <div class="cv-chips">
             <span class="cv-chip">TypeScript</span>
             <span class="cv-chip">Node.js</span>
-            <span class="cv-chip">React</span>
+            <span class="cv-chip">AWS</span>
+            <span class="cv-chip">Terraform</span>
+            <span class="cv-chip">Docker</span>
             <span class="cv-chip">NestJS</span>
             <span class="cv-chip">Fastify</span>
             <span class="cv-chip">PostgreSQL</span>
-            <span class="cv-chip">AWS</span>
-            <span class="cv-chip">Docker</span>
-            <span class="cv-chip">Terraform</span>
             <span class="cv-chip">Redis</span>
+            <span class="cv-chip">React</span>
           </div>
         </section>
 
@@ -361,9 +387,9 @@
       <section class="cv-content">
         <header class="cv-header">
           <h1>Julien Marquet</h1>
-          <p class="cv-tagline" data-i18n="tagline">Développeur Fullstack TypeScript à dominante Backend</p>
+          <p class="cv-tagline" data-i18n="tagline">Ingénieur Backend · TypeScript, Node.js, AWS</p>
           <p class="cv-years" data-i18n="exp.yearsExperience">6 ans d'expérience</p>
-          <p class="cv-profile" data-i18n="profile.summary">Développeur Fullstack TypeScript avec une forte appétence pour le backend, l'architecture logicielle et les systèmes cloud. Expérience en conception d'applications SaaS, plateformes métier et infrastructures AWS.</p>
+          <p class="cv-profile" data-i18n="profile.summary">Ingénieur backend avec une expérience fullstack, principalement en TypeScript sur AWS. Expérience en conception de plateformes SaaS, de l'architecture applicative à l'infrastructure as code (Terraform), en passant par le CI/CD, l'observabilité et la sécurité.</p>
         </header>
 
         <div class="cv-section">
@@ -375,11 +401,15 @@
                 <span class="cv-period" data-i18n="exp.ofa.period">juil. 2026 — Aujourd'hui</span>
               </div>
               <p class="cv-company">Once For All</p>
-              <p class="cv-desc" data-i18n="exp.ofa.description">Refactorisation de deux plateformes serverless, un bus d'événements et une API de données d'entreprises, chez un éditeur de SaaS de conformité pour le secteur du BTP. Mutualisation du code commun et réduction de la complexité, pour plus de fiabilité et de maintenabilité.</p>
+              <p class="cv-desc" data-i18n="exp.ofa.description">Refactorisation de deux plateformes serverless, un bus d'événements et une API de données d'entreprises, chez un éditeur de SaaS de conformité pour le secteur du BTP, avec mutualisation du code commun et réduction de la complexité. Création d'outils en ligne de commande pour les développeurs, dont un pour rejouer un événement à partir de son identifiant de corrélation (debug et support) et un autre qui produit, à partir des logs CloudWatch, un rapport sur les dérives des contrats d'API des fournisseurs.</p>
               <div class="cv-tags">
                 <span class="cv-tag">Node.js</span>
                 <span class="cv-tag">TypeScript</span>
                 <span class="cv-tag">AWS</span>
+                <span class="cv-tag">Lambda</span>
+                <span class="cv-tag">EventBridge</span>
+                <span class="cv-tag">Step Functions</span>
+                <span class="cv-tag">DynamoDB</span>
               </div>
             </article>
 
@@ -389,14 +419,18 @@
                 <span class="cv-period" data-i18n="exp.lya2.period">janv. 2023 — oct. 2024</span>
               </div>
               <p class="cv-company">Lya Protect</p>
-              <p class="cv-desc" data-i18n="exp.lya2.description">Architecture applicative et développement fullstack sur le projet Endya, une plateforme de contrôle de conformité pour les courtiers en assurance. Conception de services backend avec NestJS, développement React, intégration AWS, mise en cache Redis et infrastructure Terraform. Contribution également aux sujets d'observabilité, de sécurité applicative et d'optimisation des coûts AWS.</p>
+              <p class="cv-desc" data-i18n="exp.lya2.description">Architecture et développement fullstack (NestJS, React, Redis) d'Endya, une plateforme de contrôle de conformité pour les courtiers en assurance. Migration de la plateforme de Kubernetes vers AWS avec Terraform, avec à la clé une forte réduction des coûts et l'automatisation complète des déploiements. Réalisation de POC, documentation systématique des résultats et présentation aux autres équipes ; accompagnement des équipes dans l'adoption de nouveaux standards, notamment via une série d'ateliers sur les tests. Contribution à l'observabilité et à la sécurité applicative.</p>
               <div class="cv-tags">
-                <span class="cv-tag">React</span>
-                <span class="cv-tag">NestJS</span>
-                <span class="cv-tag">MongoDB</span>
-                <span class="cv-tag">Redis</span>
                 <span class="cv-tag">AWS</span>
                 <span class="cv-tag">Terraform</span>
+                <span class="cv-tag">ECS</span>
+                <span class="cv-tag">CloudFront</span>
+                <span class="cv-tag">Cognito</span>
+                <span class="cv-tag">CloudWatch</span>
+                <span class="cv-tag">NestJS</span>
+                <span class="cv-tag">React</span>
+                <span class="cv-tag">MongoDB</span>
+                <span class="cv-tag">Redis</span>
               </div>
             </article>
 
@@ -406,7 +440,7 @@
                 <span class="cv-period" data-i18n="exp.lya1.period">juin 2019 — janv. 2023</span>
               </div>
               <p class="cv-company">Lya Protect</p>
-              <p class="cv-desc" data-i18n="exp.lya1.description">Développement et évolution de plateformes SaaS et CRM dans le secteur de l'assurance : applications React, services backend, CI/CD, tests, composants réutilisables et amélioration de l'architecture applicative.</p>
+              <p class="cv-desc" data-i18n="exp.lya1.description">Développement et évolution de plateformes SaaS et CRM dans le secteur de l'assurance, avec React et Fastify. Mise en place des pipelines CI/CD et création de bibliothèques partagées utilisées par les autres développeurs. Tests, composants réutilisables et amélioration continue de l'architecture applicative.</p>
               <div class="cv-tags">
                 <span class="cv-tag">React</span>
                 <span class="cv-tag">Fastify</span>
